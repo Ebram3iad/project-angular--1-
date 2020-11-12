@@ -1,0 +1,47 @@
+.carousel-inner img {
+  width: 100%;
+  /* Set width to 100% */
+  min-height: 200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+.panel:hover {
+  -webkit-box-shadow: 0px 0px 4px 4px #337ab7;
+  box-shadow: 0px 0px 4px 4px #337ab7;
+}
+
+.panel-footer {
+  color: #337ab7;
+  font-size: 15px;
+}
+
+.panel-footer span {
+  background-color: #337ab7;
+  color: white;
+  margin-right: 35px;
+  font-size: 15px;
+  padding: 6px;
+  border: 1px solid silver;
+  border-radius: 10px;
+}
+
+hr {
+  border-top: 2px solid #02427a;
+}
+
+blockquote {
+  background-color: #c7e0f5;
+  color: black;
+  border-left-color: #02427a;
+}
+
+blockquote p {
+  font-size: 15px;
+}
+/*# sourceMappingURL=products.component.css.map */

@@ -1,0 +1,41 @@
+<div class="container">
+    <form #ProductCreatForm="ngForm" (ngSubmit)="FormSubmit()">
+        <div class="form-group">
+            <label for="productName">Product Name</label>
+            <input #productName="ngModel" [(ngModel)]="product.Name" id="productName" type="text" placeholder="Product Name" name="productName" class="form-control" required>
+            <br>
+            <div class="alert alert-danger" *ngIf="productName.touched && !productName.valid">
+                Product Name is required
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="productPrice">Product Price</label>
+            <input #Price="ngModel" [(ngModel)]="product.Price" id="productPrice" type="number" placeholder="Product Price" name="productPrice" class="form-control" required>
+            <div class="alert alert-danger" *ngIf="Price.touched && !Price.valid">
+                Product Price is required
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Categories">Choose Product Category</label>
+            <select #category="ngModel" required name="Categories" class="form-control browser-default custom-select" id="Categories" [(ngModel)]="product.CategoryID">
+                <option disabled selected>Select Product Category</option>
+                <option *ngFor="let category of categories" [value]="category.ID">{{category.Name}}</option>
+            </select>
+            <div class="alert alert-danger" *ngIf="category.touched && !category.valid && category.dirty && category.pristine">
+                Category is required
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Categories">Choose Product Supplier</label>
+            <select #Supplier="ngModel" required name="Suppliers" class="form-control browser-default custom-select" id="Suppliers" [(ngModel)]="product.SupplierID">
+                <option disabled selected>Select Product Supplier</option>
+                <option *ngFor="let supplier of suppliers" [value]="supplier.ID">{{supplier.Name}}</option>
+            </select>
+            <div class="alert alert-danger" *ngIf="Supplier.touched && !Supplier.valid && Supplier.dirty && Supplier.pristine">
+                Supplier is required
+            </div>
+        </div>
+        <button [disabled]="!ProductCreatForm.form.valid" class="btn btn-block btn-success">Save</button>
+    </form>
+</div>
+<div style="height: 20px;"></div>

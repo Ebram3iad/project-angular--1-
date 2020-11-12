@@ -1,0 +1,33 @@
+section {
+    //background-image: url(./assets/bg-pages/pro-card.jpeg);
+    background-size: cover;
+    height: 900px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    .totalprice{
+        font-size: 22px;
+        background-color: rgb(125, 155, 180);
+        color: white;
+    }
+
+    input{
+        border: none;
+        height: 40px;
+        font-size:22px;
+        color: #02427a;
+
+    }
+
+    input:focus{
+        border-bottom: 2px solid blue;
+        background-color: rgb(96, 117, 161);
+        color: white;
+        font-size: 25px;
+    }
+}
+
+.well{
+    font-size: 30px;
+}

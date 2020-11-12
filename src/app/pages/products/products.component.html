@@ -1,0 +1,163 @@
+<div class="container text-center">
+  <button class="btn btn-warning btn-block btn-lg" [routerLink]="['/addProduct']"> Add Product</button>
+  <hr>
+  <div style="height: 20px;"></div>
+  <h3>Existed Products</h3>
+  <br>
+  <div class="row">
+
+    <div class="col-sm-4" *ngFor="let product of productList">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <img src="assets/home-img/1.png" class="img-responsive" style="width:100%;max-height: 180px;">
+        </div>
+        <div class="panel-footer">
+          <p class="alert alert-info">{{product.Name}}</p>
+          <span style="margin-left: 31px;">{{product.Price}} EGP</span>
+          <hr>
+          <button class="btn btn-danger btn-block" (click)="onDelete(product.ID)">Delete</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- <div class="col-sm-2"> 
+         <div class="panel panel-default"> 
+           <div class="panel-body">
+               <img src="assets/products-img/1.webp" class="img-responsive" style="width:100%; max-height: 75px;" alt="Image">
+           </div> 
+           <div class="panel-footer">
+            <span>50$ </span> 
+            <button class="btn btn-primary"> Buy</button>
+          </div>  
+        </div>   
+        </div>
+
+        <div class="col-sm-2"> 
+          <div class="panel panel-default"> 
+            <div class="panel-body">
+                <img src="assets/products-img/2.png" class="img-responsive" style="width:100%; max-height: 80px;" alt="Image">
+            </div> 
+            <div class="panel-footer">
+             <span>50$ </span> 
+             <button class="btn btn-primary"> Buy</button>
+           </div>  
+         </div> 
+        </div>
+
+        <div class="col-sm-2"> 
+          <div class="panel panel-default"> 
+            <div class="panel-body">
+                <img src="assets/products-img/3.png" class="img-responsive" style="width:100%; max-height: 80px;" alt="Image">
+            </div> 
+            <div class="panel-footer">
+             <span>60$ </span> 
+             <button class="btn btn-primary"> Buy</button>
+           </div>  
+         </div> 
+        </div> 
+
+        <div class="col-sm-2"> 
+          <div class="panel panel-default"> 
+            <div class="panel-body">
+                <img src="assets/products-img/4.jpg" class="img-responsive" style="width:100%; max-height: 80px;" alt="Image">
+            </div> 
+            <div class="panel-footer">
+             <span>50$ </span> 
+             <button class="btn btn-primary"> Buy</button>
+           </div>  
+         </div> 
+        </div> 
+
+        <div class="col-sm-2"> 
+          <div class="panel panel-default"> 
+            <div class="panel-body">
+                <img src="assets/products-img/5.webp" class="img-responsive" style="width:100%; max-height: 80px;" alt="Image">
+            </div> 
+            <div class="panel-footer">
+             <span>50$ </span> 
+             <button class="btn btn-primary"> Buy</button>
+           </div>  
+         </div> 
+        </div> 
+
+      </div>
+    </div><br>
+
+    <div class="container text-center">    
+      <br>
+      <div class="row">
+        <div class="col-sm-2">
+
+          <div class="panel panel-default"> 
+            <div class="panel-body">
+                <img src="assets/products-img/1.png" class="img-responsive" style="width:100%; max-height: 75px;" alt="Image">
+            </div> 
+            <div class="panel-footer">
+                <span>30$ </span> 
+                <button class="btn btn-primary"> Buy</button>
+           </div>  
+         </div> 
+        </div>
+
+        <div class="col-sm-2"> 
+         <div class="panel panel-default"> 
+           <div class="panel-body">
+               <img src="assets/products-img/1.webp" class="img-responsive" style="width:100%; max-height: 75px;" alt="Image">
+           </div> 
+           <div class="panel-footer">
+            <span>50$ </span> 
+            <button class="btn btn-primary"> Buy</button>
+          </div>  
+        </div>   
+        </div>
+
+        <div class="col-sm-2"> 
+          <div class="panel panel-default"> 
+            <div class="panel-body">
+                <img src="assets/products-img/2.png" class="img-responsive" style="width:100%; max-height: 80px;" alt="Image">
+            </div> 
+            <div class="panel-footer">
+             <span>50$ </span> 
+             <button class="btn btn-primary"> Buy</button>
+           </div>  
+         </div> 
+        </div>
+
+        <div class="col-sm-2"> 
+          <div class="panel panel-default"> 
+            <div class="panel-body">
+                <img src="assets/products-img/3.png" class="img-responsive" style="width:100%; max-height: 80px;" alt="Image">
+            </div> 
+            <div class="panel-footer">
+             <span>60$ </span> 
+             <button class="btn btn-primary"> Buy</button>
+           </div>  
+         </div> 
+        </div> 
+
+        <div class="col-sm-2"> 
+          <div class="panel panel-default"> 
+            <div class="panel-body">
+                <img src="assets/products-img/4.jpg" class="img-responsive" style="width:100%; max-height: 80px;" alt="Image">
+            </div> 
+            <div class="panel-footer">
+             <span>50$ </span> 
+             <button class="btn btn-primary"> Buy</button>
+           </div>  
+         </div> 
+        </div> 
+
+        <div class="col-sm-2"> 
+          <div class="panel panel-default"> 
+            <div class="panel-body">
+                <img src="assets/products-img/5.webp" class="img-responsive" style="width:100%; max-height: 80px;" alt="Image">
+            </div> 
+            <div class="panel-footer">
+             <span>50$ </span> 
+             <button class="btn btn-primary"> Buy</button>
+           </div>  
+         </div> 
+        </div>  -->
+
+  </div>
+</div><br>

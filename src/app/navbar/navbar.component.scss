@@ -1,0 +1,28 @@
+nav{
+    background-color: #02427a; 
+}
+
+nav a:hover{
+    font-size: 25px;
+}
+
+
+nav li a.active{
+    font-size: 25px;
+}
+
+nav a{
+    padding: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+nav .dropdown-menu li a{
+    padding: 5px;
+    background-color: #58a2e4;
+}
+
+nav .dropdown-menu li a:hover{
+    background-color:#02427a ;
+}
+

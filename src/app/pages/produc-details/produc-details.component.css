@@ -1,0 +1,38 @@
+section {
+  background-image: url(src/assets/bg-pages/pro-card.jpeg);
+  background-size: cover;
+  height: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .totalprice {
+  font-size: 22px;
+  background-color: #7d9bb4;
+  color: white;
+}
+
+section input {
+  border: none;
+  height: 40px;
+  font-size: 22px;
+  color: #02427a;
+}
+
+section input:focus {
+  border-bottom: 2px solid blue;
+  background-color: #6075a1;
+  color: white;
+  font-size: 25px;
+}
+
+.well {
+  font-size: 30px;
+}
+/*# sourceMappingURL=produc-details.component.css.map */
